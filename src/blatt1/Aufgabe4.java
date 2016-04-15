@@ -17,6 +17,8 @@ public class Aufgabe4 {
     }
 
     private static int quadraticTransform(int x1, int x2, double t) {
+        //TODO: richtige Berechnung durchführen
+        //TODO: kubische Funktion
         return (int) ((1 - t * t) * x1 + t * t * x2);
     }
 
