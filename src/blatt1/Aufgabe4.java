@@ -1,3 +1,5 @@
+package blatt1;
+
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -79,7 +81,7 @@ public class Aufgabe4 {
         frame.setLayout(new BorderLayout());
         Polygon currentPolygon = fromList(polyFrom);
         ProgressBar progressBar = new ProgressBar();
-        progressBar.setPreferredSize(new Dimension(-1,40));
+        progressBar.setPreferredSize(new Dimension(-1, 40));
         frame.add(progressBar, BorderLayout.NORTH);
         MyCanvas canvas = new MyCanvas();
         frame.add(canvas, BorderLayout.CENTER);
