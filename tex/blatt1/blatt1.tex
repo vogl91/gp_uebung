@@ -1,0 +1,69 @@
+\documentclass[a4paper,12pt]{article}
+
+%\pagestyle{empty}
+\usepackage{geometry}
+\usepackage[ngerman]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[pdftex]{hyperref}
+\usepackage{amsmath,amssymb,listings,tikz}
+
+%more space
+\geometry{top=2cm, right=2cm, bottom=2cm, left=2cm}
+
+%no numbers
+\def\thesection{}
+\def\thesubsection{}
+\def\thesubsubsection{}
+
+\usetikzlibrary{positioning,automata}
+
+\title{Übungsblatt 1}
+%\author{Alexander Vogelgsang\\Alexander Diefenbach}
+
+\begin{document}
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}
+Universität Augsburg, Institut für Informatik\\
+Prof. Dr. Bernhard Möller\\
+%Christoph Etzel, Simon Lohmüller, Thomas Driessen
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\begin{flushright}
+Sommersemester 2016\\
+Vorlesung Graphikprogrammierung\\
+Abgabe \today
+\end{flushright}
+\end{minipage}
+\begin{center}
+\vskip 3em
+{\huge \bfseries Übung zu Graphikprogrammierung\\[1em]}
+
+\makeatletter
+{\large \@title\\[1em]}
+\makeatletter
+\@author
+\makeatother
+\end{center}
+
+
+
+
+\section{Aufgabe 1}
+$A=(56,34,23), B=(43,88,15), C=(33,77,44)$\\
+$\overrightarrow{AB} = \begin{pmatrix}-13\\54\\-8\end{pmatrix}
+\overrightarrow{BC} = \begin{pmatrix}-10\\-11\\29\end{pmatrix}
+\overrightarrow{AB} \times \overrightarrow{BC} =\begin{pmatrix}1478\\457\\683\end{pmatrix} \not= \begin{pmatrix}0\\0\\0\end{pmatrix} \Rightarrow \text{Punkte liegen nicht auf einer Geraden}$
+\section{Aufgabe 2}
+$ A=(4,-5,-2), B=(12,-9,2), C=(1,-4,5)$\\
+$\overrightarrow{AB} = \begin{pmatrix}8\\-4\\4\end{pmatrix}
+\overrightarrow{AC} = \begin{pmatrix}-3\\1\\7\end{pmatrix}$
+$\overrightarrow{AB} \cdot \overrightarrow{AC} = 0 \Rightarrow \text{Dreieck ist rechtwinklig}$
+\section{Aufgabe 3}
+$A=(-3,4,5), X=(1,0,0), Y=(0,1,0), Z=(0,0,1)$\\
+$\alpha = \cos^{-1}(\frac{\vec{a} \cdot \vec{b}}{||\vec{a}|| \cdot ||\vec{b}||})$\\
+$\alpha_x = 2.00895 = 115.104^\circ \quad
+\alpha_y = 0.969532 = 55.5501^\circ \quad
+\alpha_z = 0.785398 = 45^\circ$
+\end{document}
